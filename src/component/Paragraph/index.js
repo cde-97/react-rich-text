@@ -3,9 +3,9 @@ import Segment from "../Segment";
 
 export default class Paragraph extends Component {
   render() {
-    const { id, style, segments } = this.props.paragraph;
+    const { type, style, segments } = this.props.paragraph;
     return (
-      <div id={id} style={style}>
+      <div id={type} style={style}>
         {segments.map((item) => {
           return <Segment segment={item}></Segment>;
         })}
