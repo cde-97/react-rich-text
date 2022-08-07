@@ -1,0 +1,8 @@
+.editor-area {
+  outline: none;
+  width: 400px;
+  min-height: 80px;
+  line-height: 20px;
+  /* margin: 0 auto; */
+  border: 1px solid #999;
+}

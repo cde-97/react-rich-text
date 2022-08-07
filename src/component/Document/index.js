@@ -3,11 +3,11 @@ import Paragraph from "../Paragraph";
 
 export default class Document extends Component {
   render() {
-    const { type,nodes } = this.props.document;
+    const { id, nodes } = this.props.document;
     return (
-      <div id={type} >
-        {nodes.map((item) => {
-          return <Paragraph paragraph={item}></Paragraph>;
+      <div id={id}>
+        {nodes.map((item, idx) => {
+          return <Paragraph key={idx} paragraph={item}></Paragraph>;
         })}
       </div>
     );
